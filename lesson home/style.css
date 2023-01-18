@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 220, 255);
+  color: rgb(0, 0, 255);
+  margin: 10px;
+  padding: 12px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.btn-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 220, 255);
+  color: rgb(0, 0, 255);
+  margin: 10px;
+  padding: 12px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  position: relative;
+  margin-right: 15px;
+}
+.btn-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 220, 255);
+  color: rgb(0, 0, 255);
+  margin: 10px;
+  padding: 12px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  position: relative;
+  margin-right: 15px;
+}
+.btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 220, 255);
+  color: rgb(0, 0, 255);
+  margin: 10px;
+  padding: 12px 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  position: relative;
+}
+
+i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(0);
+  color: black;
+}
+
+.btn-up:hover i {
+  transform: translateY(-30px);
+  animation: up 1s linear infinite;
+}
+.btn-down:hover i {
+  transform: translateY(30px);
+  animation: down 1s linear infinite;
+}
+.btn-left:hover i {
+  transform: translateX(30px);
+  animation: left 1s linear infinite;
+}
+.btn-right:hover i {
+  transform: translateY(-30px);
+  animation: right 1s linear infinite;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-34px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(38px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
